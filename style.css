@@ -1,0 +1,37 @@
+@font-face{
+    font-family: popin;
+    src: url(./plugnins/Poppins/Poppins/Poppins-Regular.ttf);
+}
+*{
+    font-family: popin;
+}
+.monDiv1{
+    background-image: url(./image/accueil.jpg);
+    background-position: center center;
+    background-attachment: scroll;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+}
+.monDiv1::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(000, 000, 000,0.6);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+}
+.formulaire-end ::placeholder{
+    color:  white;
+}
+.formulaire-end{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.formulaire-end input, .text-area{
+    background-color: rgba(255, 255, 255, 0.4);
+}
