@@ -2,6 +2,11 @@
     font-family: popin;
     src: url(./plugnins/Poppins/Poppins/Poppins-Regular.ttf);
 }
+body,html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 *{
     font-family: popin;
 }
@@ -30,8 +35,15 @@
 .formulaire-end{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 23px;
+    justify-content: start;
+    align-items: center;
 }
 .formulaire-end input, .text-area{
     background-color: rgba(255, 255, 255, 0.4);
+}
+.gri{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
 }
